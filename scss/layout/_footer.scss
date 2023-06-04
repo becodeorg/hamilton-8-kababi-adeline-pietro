@@ -1,0 +1,31 @@
+@use '../base/fonts';
+
+$footer-font-color: #979999;
+
+
+footer {
+    background-image: url('../assets/img/footer/img-ng-footer.jpg');
+    color: white;
+    font-family: fonts.$font-brands;
+
+    .footer__container-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        p {
+            color: $footer-font-color;
+
+            a {
+                text-decoration: none;
+                color: $footer-font-color;
+            }
+
+        }
+    }
+
+    .footer__logo {
+        text-align: center;
+        padding: 50px;
+    }
+
+}

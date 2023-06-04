@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "fa-brands";
+  font-weight: 400;
+  src: url("../assets/font/fa-brands-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "fa-light";
+  font-weight: 300;
+  src: url("../assets/font/fa-light-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "fa-regular";
+  font-weight: 400;
+  src: url("../assets/font/fa-regular-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "fa-solid";
+  font-weight: 900;
+  src: url("../assets/font/fa-solid-900.woff2") format("woff2");
+}
+footer {
+  background-image: url("../assets/img/footer/img-ng-footer.jpg");
+  color: white;
+  font-family: "fa-brands", serif;
+}
+footer .footer__container-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+footer .footer__container-links p {
+  color: #979999;
+}
+footer .footer__container-links p a {
+  text-decoration: none;
+  color: #979999;
+}
+footer .footer__logo {
+  text-align: center;
+  padding: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
