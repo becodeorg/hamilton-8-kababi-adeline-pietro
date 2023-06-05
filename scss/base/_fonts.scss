@@ -1,14 +1,16 @@
 @font-face {
+    font-family: 'fa-light';
+    font-weight: 300;
+    src: url('../assets/font/fa-light-300.woff2') format('woff2');
+}
+
+
+@font-face {
     font-family: 'fa-brands';
     font-weight: 400;
     src: url('../assets/font/fa-brands-400.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: 'fa-light';
-    font-weight: 300;
-    src: url('../assets/font/fa-light-300.woff2') format('woff2');
-}
 
 @font-face {
     font-family: 'fa-regular';
@@ -22,4 +24,7 @@
     src: url('../assets/font/fa-solid-900.woff2') format('woff2');
 }
 
-$font-brands: 'fa-brands', serif;
+$font-light-serif: 'fa-light', serif;
+$font-brands-serif: 'fa-brands', serif;
+$font-regular-serif: 'fa-regular', serif;
+$font-solid-serif:'fa-solid', serif;
