@@ -156,12 +156,55 @@ footer .footer__down .reseau a i:hover {
   color: #c8a96a;
 }
 
-.news .news_article {
+.news {
+  font-family: "Open Sans", sans-serif;
+  padding: 100px;
+}
+
+.news_title {
+  padding: 90px 50px;
+}
+.news_title h2 {
+  font-family: "Forum", cursive;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+.news_title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
+}
+
+.news_article {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 100px;
 }
-.news figcaption i {
+.news_article article {
+  width: 410px;
+  height: 280px;
+}
+.news_article article figcaption {
+  background-color: antiquewhite;
+}
+.news_article article img {
+  width: 410px;
+  height: 280px;
+}
+.news_article article i {
   color: #c8a96a;
+}
+.news_article article p {
+  font-family: "Forum", cursive;
+  font-size: 20px;
+}
+.news_article article button {
+  width: 1px;
+  height: 50px;
+}
+.news_article article button .fa-solid-fa-arrow-right {
+  color: white;
 }
 
 header {
@@ -192,9 +235,11 @@ header {
   align-items: center;
   color: white;
 }
-.navbar .contact .reserve {
+.navbar .contact .contact-btn {
   display: flex;
   align-items: center;
+  background-color: #c19f60;
+  color: white;
 }
 
 ul {
@@ -212,11 +257,6 @@ ul li a {
 }
 ul li a:hover {
   color: rgb(193, 159, 96);
-}
-
-.reserve .contact-btn {
-  background-color: #c19f60;
-  color: white;
 }
 
 .header {
@@ -248,4 +288,23 @@ ul li a:hover {
   background-color: rgb(193, 159, 96);
 }
 
-/*# sourceMappingURL=style.css.map */
+.chefs {
+  font-family: "Open Sans", sans-serif;
+  padding: 100px;
+}
+.chefs .chefs__photo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.chefs__title h2 {
+  font-family: "Forum", cursive;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+.chefs__title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
+}/*# sourceMappingURL=style.css.map */

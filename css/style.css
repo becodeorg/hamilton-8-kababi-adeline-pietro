@@ -156,24 +156,66 @@ footer .footer__down .reseau a i:hover {
   color: #c8a96a;
 }
 
-.news .news_article {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-.news figcaption i {
-  color: #c8a96a;
+.news {
+  font-family: "Open Sans", sans-serif;
+  padding: 100px;
 }
 
-* {
-  border: red solid 1px;
+.news_title {
+  padding: 90px 50px;
+}
+.news_title h2 {
+  font-family: "Forum", cursive;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+.news_title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
+}
+
+.news_article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 100px;
+}
+.news_article article {
+  width: 410px;
+  height: 280px;
+}
+.news_article article figcaption {
+  background-color: antiquewhite;
+}
+.news_article article img {
+  width: 410px;
+  height: 280px;
+}
+.news_article article i {
+  color: #c8a96a;
+}
+.news_article article p {
+  font-family: "Forum", cursive;
+  font-size: 20px;
+}
+.news_article article button {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  font-weight: 900;
+}
+.news_article article button i {
+  color: black;
 }
 
 header {
   background-image: url("../assets/img/slider/img_bg_slider_home01.jpg");
   background-repeat: no-repeat;
-  /* background-position: right; */
-  /*  width: 100vw;
-   height: 100vh; */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -213,26 +255,29 @@ header {
   display: flex;
   align-items: center;
   color: white;
-  margin-right: 30px;
-  font-size: 15px;
 }
-.navbar .contact .reserve {
+.navbar .contact .contact-btn {
   display: flex;
   align-items: center;
-}
-.navbar .menu {
-  display: none;
-}
-
-.reserve .contact-btn {
   background-color: #c19f60;
   color: white;
-  width: 200px;
-  padding: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-radius: 5px;
-  font-size: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+ul li a:hover {
+  color: rgb(193, 159, 96);
 }
 
 .header {
@@ -267,21 +312,101 @@ header {
   background-color: rgb(193, 159, 96);
 }
 
-@media screen and (max-width: 1035px) {
-  header {
-    background-position: center;
-  }
-  .navbar li {
-    display: none;
-  }
-  .navbar .contact {
-    display: none;
-  }
+.chefs {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("../assets/img/our-chefs/imgbg-ourchefs.jpg");
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.chefs .chefs__photo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10;
+  margin: 5px;
+  padding-bottom: 200px;
+}
+
+.chefs__title {
+  color: white;
+  padding-top: 100px;
+}
+.chefs__title h2 {
+  font-family: "Forum", cursive;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.chefs__title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
+  padding-bottom: 50px;
+}
+
+.gallery .gallery__title h2 {
+  font-family: "Forum", cursive;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.gallery .gallery__title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
+}
+.gallery .gallery__container-grid {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 4, 1fr;
+  grid-template-rows: 2, 1fr;
+}
+.gallery .gallery__container-grid .card-large1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.gallery .gallery__container-grid .card1 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.gallery .gallery__container-grid .card2 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.gallery .gallery__container-grid .card3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.gallery .gallery__container-grid .card4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.gallery .gallery__container-grid .card-large2 {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+.price .price__container-grid {
+  display: grid;
+  grid-template-columns: repeat 4, 1fr;
+  grid-template-rows: repeat 2, 1fr;
+}
+.price .price__container-grid .meal .meal__info h3 {
+  font-family: "Forum", cursive;
+}
+.price .price__container-grid .meal .meal__info h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+.price__title h2 {
+  font-family: "Forum", cursive;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+.price__title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
 }
 
 /*# sourceMappingURL=style.css.map */

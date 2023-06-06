@@ -1,15 +1,67 @@
 @use '../base/fonts';
 
 .news {
+    font-family: fonts.$font-open-sans;
+    padding: 100px;
+}
 
-    .news_article {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+.news_title {
+    padding: 90px 50px;
+
+    h2 {
+        font-family: fonts.$font-forum-cursive;
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
     }
-    figcaption {
+
+    h3 {
+        text-align: center;
+        font-weight: 300;
+        line-height: 3;
+    }
+}
+
+.news_article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px;
+
+    article {
+        width: 410px;
+        height: 280px;
+
+        figcaption {
+            background-color: antiquewhite;
+        }
+
+
+        img {
+            width: 410px;
+            height: 280px;
+        }
+
         i {
             color: #c8a96a;
-            
+
+        }
+
+        p {
+            font-family: fonts.$font-forum-cursive;
+            font-size: 20px;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            background-color: white;
+            font-weight: 900;
+
+            i {
+                color: black;
+
+            }
+
         }
     }
 }

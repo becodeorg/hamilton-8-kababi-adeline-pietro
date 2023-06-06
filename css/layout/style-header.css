@@ -13,65 +13,50 @@ header {
   justify-content: space-between;
   padding: 40px;
 }
+
 .navbar .logo {
   display: flex;
 }
+
 .navbar .contact {
   display: flex;
   justify-content: space-between;
   width: 250px;
 }
+
 .navbar .contact .numberphone {
   display: flex;
   align-items: center;
   color: white;
 }
-<<<<<<< HEAD
-.navbar .contact .reserve {
-  display: flex;
-  align-items: center;
-=======
+
 .navbar .contact .contact-btn {
   display: flex;
   align-items: center;
   background-color: #c19f60;
   color: white;
->>>>>>> development
 }
 
 ul {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
-  margin-left: 100px;
-=======
->>>>>>> development
 }
+
 ul li {
   list-style: none;
   margin-right: 50px;
 }
+
 ul li a {
   text-decoration: none;
   color: white;
-<<<<<<< HEAD
-  font-size: 15px;
-=======
   font-size: 20px;
->>>>>>> development
 }
+
 ul li a:hover {
   color: rgb(193, 159, 96);
 }
 
-<<<<<<< HEAD
-.reserve .contact-btn {
-  background-color: #c19f60;
-  color: white;
-}
-
-=======
->>>>>>> development
 .header {
   display: flex;
   flex-direction: row;
@@ -84,10 +69,12 @@ ul li a:hover {
   background-repeat: no-repeat;
   background-position: right;
 }
+
 .header h1 {
   font-size: 120px;
   color: white;
 }
+
 .header button {
   background: transparent;
   color: white;
@@ -97,12 +84,9 @@ ul li a:hover {
   padding-right: 10px;
   width: 50%;
 }
+
 .header button:hover {
   background-color: rgb(193, 159, 96);
-<<<<<<< HEAD
-}
+} 
 
 /*# sourceMappingURL=style-header.css.map */
-=======
-}/*# sourceMappingURL=style-header.css.map */
->>>>>>> development
