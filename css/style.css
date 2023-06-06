@@ -209,18 +209,24 @@ footer .footer__down .reseau a i:hover {
   color: black;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-image: url("../assets/img/slider/img_bg_slider_home01.jpg");
   background-repeat: no-repeat;
-  width: 100vw;
   height: 100vh;
-  margin: 0;
-  padding: 0;
+  /* background-position: right; */
+  /*  width: 100vw;
+   height: 100vh; */
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding: 2%;
 }
 .navbar .logo {
   display: flex;
@@ -235,7 +241,7 @@ header {
 }
 .navbar ul li {
   list-style: none;
-  margin-right: 50px;
+  margin-right: 13%;
 }
 .navbar ul li a {
   display: flex;
@@ -249,35 +255,38 @@ header {
 .navbar .contact {
   display: flex;
   justify-content: space-between;
-  margin-right: 30px;
 }
 .navbar .contact .numberphone {
   display: flex;
   align-items: center;
   color: white;
+  margin-right: 5%;
+  font-size: 15px;
 }
-.navbar .contact .contact-btn {
+.navbar .contact .reserve {
   display: flex;
   align-items: center;
-  background-color: #c19f60;
-  color: white;
+}
+.navbar .menu {
+  display: none;
+  position: absolute;
+}
+.navbar .menu .menuBurger {
+  display: none;
+  top: 0px;
+  right: 0px;
+  width: 20%;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-}
-ul li {
-  list-style: none;
-  margin-right: 50px;
-}
-ul li a {
-  text-decoration: none;
+.reserve .contact-btn {
+  background-color: #c19f60;
   color: white;
-  font-size: 20px;
-}
-ul li a:hover {
-  color: rgb(193, 159, 96);
+  width: max-content;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  font-size: 10px;
 }
 
 .header {
@@ -291,27 +300,134 @@ ul li a:hover {
 }
 .header img {
   position: absolute;
-  top: 0px;
+  width: 30%;
+  top: 60px;
   left: 350px;
 }
 .header h1 {
   font-size: 100px;
   color: white;
   margin-bottom: 50px;
+  margin-top: 100px;
 }
 .header button {
   background: transparent;
   color: white;
   border-radius: 5px;
   padding: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 50%;
 }
 .header button:hover {
   background-color: rgb(193, 159, 96);
 }
 
+@media screen and (max-width: 900px) {
+  header {
+    background-position: top;
+  }
+  .navbar {
+    /* .menu{
+        .menuBurger{
+            display: block;
+            top: 0px;
+            right: 0px;
+        }
+    } */
+  }
+  .navbar .logo {
+    display: block;
+  }
+  .navbar li {
+    display: none;
+  }
+  .navbar .contact {
+    display: none;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header img {
+    display: none;
+  }
+  .header h1 {
+    margin-top: 200px;
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 650px) {
+  header {
+    background-position: top;
+  }
+  .navbar {
+    display: flex;
+    padding: 5%;
+    /* .menu{
+        .menuBurger{
+            display: block;
+            top: 0px;
+            left: 100px;
+        }
+    } */
+  }
+  .navbar li {
+    display: none;
+  }
+  .navbar .contact {
+    display: none;
+  }
+  .navbar img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 580px) {
+  header {
+    width: 100%;
+    background-position: top;
+  }
+  .navbar {
+    display: flex;
+    padding: 5%;
+    /* .menu{
+        .menuBurger{
+            display: block;
+            top: 0px;
+            left: 100px;
+        }
+    } */
+  }
+  .navbar li {
+    display: none;
+  }
+  .navbar .contact {
+    display: none;
+  }
+  .navbar img {
+    width: 30%;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .header .container {
+    width: 350px;
+  }
+  .header .container img {
+    display: none;
+  }
+  .header .container h1 {
+    display: flex;
+    width: auto;
+    margin-top: 200px;
+    font-size: 50px;
+    margin-left: 0px;
+  }
+}
 .chefs {
   font-family: "Open Sans", sans-serif;
   background-image: url("../assets/img/our-chefs/imgbg-ourchefs.jpg");

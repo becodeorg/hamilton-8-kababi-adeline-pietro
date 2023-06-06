@@ -26,26 +26,16 @@ header {
   align-items: center;
   color: white;
 }
-<<<<<<< HEAD
-.navbar .contact .reserve {
-  display: flex;
-  align-items: center;
-=======
 .navbar .contact .contact-btn {
   display: flex;
   align-items: center;
   background-color: #c19f60;
   color: white;
->>>>>>> development
 }
 
 ul {
   display: flex;
   flex-direction: row;
-<<<<<<< HEAD
-  margin-left: 100px;
-=======
->>>>>>> development
 }
 ul li {
   list-style: none;
@@ -54,24 +44,12 @@ ul li {
 ul li a {
   text-decoration: none;
   color: white;
-<<<<<<< HEAD
-  font-size: 15px;
-=======
   font-size: 20px;
->>>>>>> development
 }
 ul li a:hover {
   color: rgb(193, 159, 96);
 }
 
-<<<<<<< HEAD
-.reserve .contact-btn {
-  background-color: #c19f60;
-  color: white;
-}
-
-=======
->>>>>>> development
 .header {
   display: flex;
   flex-direction: row;
@@ -99,10 +77,4 @@ ul li a:hover {
 }
 .header button:hover {
   background-color: rgb(193, 159, 96);
-<<<<<<< HEAD
-}
-
-/*# sourceMappingURL=style-header.css.map */
-=======
 }/*# sourceMappingURL=style-header.css.map */
->>>>>>> development
