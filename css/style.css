@@ -160,9 +160,128 @@ footer .footer__down .reseau a i:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
 .news figcaption i {
   color: #c8a96a;
-} 
+}
+
+* {
+  border: red solid 1px;
+}
+
+header {
+  background-image: url("../assets/img/slider/img_bg_slider_home01.jpg");
+  background-repeat: no-repeat;
+  /* background-position: right; */
+  /*  width: 100vw;
+   height: 100vh; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .logo {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1%;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+.navbar ul li a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.navbar ul li a:hover {
+  color: rgb(193, 159, 96);
+}
+.navbar .contact {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.navbar .contact .numberphone {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 30px;
+  font-size: 15px;
+}
+.navbar .contact .reserve {
+  display: flex;
+  align-items: center;
+}
+.navbar .menu {
+  display: none;
+}
+
+.reserve .contact-btn {
+  background-color: #c19f60;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-left: 130px;
+}
+.header img {
+  position: absolute;
+  top: 0px;
+  left: 350px;
+}
+.header h1 {
+  font-size: 100px;
+  color: white;
+  margin-bottom: 50px;
+}
+.header button {
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+.header button:hover {
+  background-color: rgb(193, 159, 96);
+}
+
+@media screen and (max-width: 1035px) {
+  header {
+    background-position: center;
+  }
+  .navbar li {
+    display: none;
+  }
+  .navbar .contact {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*# sourceMappingURL=style.css.map */

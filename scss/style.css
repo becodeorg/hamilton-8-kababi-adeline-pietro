@@ -83,10 +83,6 @@ footer .footer__container-links .newsletters input {
   width: 400px;
   height: 50px;
 }
-footer .footer__container-links .newsletters input::-moz-placeholder {
-  font-size: 20px;
-  padding-left: 30px;
-}
 footer .footer__container-links .newsletters input::placeholder {
   font-size: 20px;
   padding-left: 30px;
@@ -166,4 +162,90 @@ footer .footer__down .reseau a i:hover {
 }
 .news figcaption i {
   color: #c8a96a;
-}/*# sourceMappingURL=style.css.map */
+}
+
+header {
+  background-image: url("../assets/img/slider/img_bg_slider_home01.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+}
+.navbar .logo {
+  display: flex;
+}
+.navbar .contact {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.navbar .contact .numberphone {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.navbar .contact .reserve {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+ul li a:hover {
+  color: rgb(193, 159, 96);
+}
+
+.reserve .contact-btn {
+  background-color: #c19f60;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-left: 130px;
+  background-image: url("../assets/img/slider/img_bg2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.header h1 {
+  font-size: 120px;
+  color: white;
+}
+.header button {
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+.header button:hover {
+  background-color: rgb(193, 159, 96);
+}
+
+/*# sourceMappingURL=style.css.map */
