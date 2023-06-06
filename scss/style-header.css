@@ -1,5 +1,5 @@
 header {
-  background-image: url(assets/img/slider/img_bg_slider_home01.jpg);
+  background-image: url("../assets/img/slider/img_bg_slider_home01.jpg");
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
@@ -29,7 +29,7 @@ header {
 .navbar .contact .contact-btn {
   display: flex;
   align-items: center;
-  background-color: rgb(193, 159, 96);
+  background-color: #c19f60;
   color: white;
 }
 
@@ -58,7 +58,7 @@ ul li a:hover {
   padding: 20px;
   position: relative;
   margin-left: 130px;
-  background-image: url("assets/img/slider/img_bg2.png");
+  background-image: url("../assets/img/slider/img_bg2.png");
   background-repeat: no-repeat;
   background-position: right;
 }
