@@ -156,13 +156,212 @@ footer .footer__down .reseau a i:hover {
   color: #c8a96a;
 }
 
-.news .news_article {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.news {
+  font-family: "Open Sans", sans-serif;
+  padding: 100px;
 }
 
-.news figcaption i {
+.news_title {
+  padding: 90px 50px;
+}
+.news_title h2 {
+  font-family: "Forum", cursive;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+.news_title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
+}
+
+.news_article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 100px;
+}
+.news_article article {
+  width: 410px;
+  height: 280px;
+}
+.news_article article figcaption {
+  background-color: antiquewhite;
+}
+.news_article article img {
+  width: 410px;
+  height: 280px;
+}
+.news_article article i {
   color: #c8a96a;
-} 
+}
+.news_article article p {
+  font-family: "Forum", cursive;
+  font-size: 20px;
+}
+.news_article article button {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  font-weight: 900;
+}
+.news_article article button i {
+  color: black;
+}
+
+header {
+  background-image: url("../assets/img/slider/img_bg_slider_home01.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+}
+.navbar .logo {
+  display: flex;
+}
+.navbar .contact {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.navbar .contact .numberphone {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.navbar .contact .contact-btn {
+  display: flex;
+  align-items: center;
+  background-color: #c19f60;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+ul li a:hover {
+  color: rgb(193, 159, 96);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin-left: 130px;
+  background-image: url("../assets/img/slider/img_bg2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.header h1 {
+  font-size: 120px;
+  color: white;
+}
+.header button {
+  background: transparent;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+.header button:hover {
+  background-color: rgb(193, 159, 96);
+}
+
+.chefs {
+  font-family: "Open Sans", sans-serif;
+  background-image: url("../assets/img/our-chefs/imgbg-ourchefs.jpg");
+}
+.chefs .chefs__photo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10;
+  margin: -60px;
+  padding-bottom: 200px;
+}
+
+.chefs__title {
+  color: white;
+  padding-top: 100px;
+}
+.chefs__title h2 {
+  font-family: "Forum", cursive;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.chefs__title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
+  padding-bottom: 50px;
+}
+
+.gallery .gallery__title h2 {
+  font-family: "Forum", cursive;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: -15px;
+}
+.gallery .gallery__title h3 {
+  text-align: center;
+  font-weight: 300;
+  line-height: 3;
+  padding-bottom: 50px;
+}
+.gallery .gallery__container-grid {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: 4, 1fr;
+  grid-template-rows: 2, 1fr;
+}
+.gallery .gallery__container-grid .card-large1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.gallery .gallery__container-grid .card1 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.gallery .gallery__container-grid .card2 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+.gallery .gallery__container-grid .card3 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.gallery .gallery__container-grid .card4 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.gallery .gallery__container-grid .card-large2 {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
 
 /*# sourceMappingURL=style.css.map */
