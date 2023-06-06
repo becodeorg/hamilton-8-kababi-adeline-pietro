@@ -158,4 +158,12 @@ footer .footer__down .reseau a i {
 }
 footer .footer__down .reseau a i:hover {
   color: #c8a96a;
+}
+
+.news .news_article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.news figcaption i {
+  color: #c8a96a;
 }/*# sourceMappingURL=style.css.map */
