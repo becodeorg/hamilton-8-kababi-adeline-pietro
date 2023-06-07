@@ -25,18 +25,18 @@ footer {
     .footer__container-links {
         display: grid;
 
-        @media only screen and (max-width: 410px) {
+        @media only screen and (max-width: 375px) {
 
             grid-template-columns: repeat(1, 1fr);
         }
 
-        @media only screen and (min-width: 411px) and (max-width: 767px) {
+        @media only screen and (max-width: 650px) {
 
             grid-template-columns: repeat(2, 1fr);
             padding: 60px;
         }
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (max-width: 900px) {
 
             grid-template-columns: repeat(5, 1fr);
             padding: 60px;
