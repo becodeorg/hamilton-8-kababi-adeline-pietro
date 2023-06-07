@@ -19,8 +19,8 @@
     .gallery__container-grid {
         padding: 100px;
         display: grid;
-        grid-template-columns: (4, 1fr);
-        grid-template-rows: (2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
         .card-large1 {
             grid-column: 1 / 3;

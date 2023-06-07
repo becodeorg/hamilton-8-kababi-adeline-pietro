@@ -29,10 +29,9 @@
 
     article {
         width: 410px;
-        height: 280px;
+        background-color: antiquewhite;
 
         figcaption {
-            background-color: antiquewhite;
         }
 
 
@@ -47,7 +46,7 @@
         }
 
         p {
-            font-family: fonts.$font-forum-cursive;
+            font-family: fonts.$font-open-sans;
             font-size: 20px;
         }
 
