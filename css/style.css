@@ -41,6 +41,13 @@ footer {
   line-height: 30px;
   padding: 82px 10px;
 }
+footer .container-links {
+  display: flex;
+  flex-direction: row;
+}
+footer .container-links .links-facilities {
+  width: min-content;
+}
 footer h3 {
   font-family: "Forum", cursive;
   font-size: 25px;
