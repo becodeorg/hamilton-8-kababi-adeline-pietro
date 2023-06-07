@@ -15,7 +15,7 @@ footer {
         font-size: 25px;
         font-weight: 500;
     }
-    
+
 
     .footer {
         &__logo {
@@ -25,6 +25,83 @@ footer {
 
         &__container-links {
             display: grid;
+
+            @media only screen and (min-width: 768px) {
+
+                grid-template-columns: repeat(5, 1fr);
+                padding: 60px;
+            }
+
+            p {
+                color: $footer-font-color;
+                font-size: 15px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 15px;
+                    color: $footer-font-color;
+                }
+
+            }
+
+            .newsletters {
+
+                @media only screen and (min-width: 768px) {
+                    grid-column: 3 / 5;
+                    padding-right: 50px;
+                }
+
+                input {
+                    width: 300px;
+                    height: 50px;
+                }
+            }
+
+            &::placeholder {
+                font-size: 20px;
+                padding-left: 30px;
+            }
+        } 
+
+        button {
+            width: 57px;
+            height: 57px;
+            margin-left: -7px;
+            background-color: #c8a96a;
+
+            i {
+                color: white;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .contact {
+        p {
+            i {
+                padding-right: 10px;
+                color: #c8a96a;
+            }
+
+
+        }
+    }
+}
+
+.footer__line {
+    text-align: center;
+
+    .img-spoon {
+        @media only screen and (max-width: 410px) {
+
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media only screen and (min-width: 411px) and (max-width: 767px) {
+
+            grid-template-columns: repeat(2, 1fr);
+            padding: 60px;
+        }
 
         @media only screen and (min-width: 768px) {
 
@@ -86,149 +163,73 @@ footer {
         }
     }
 
-    .footer__line {
+    &__line {
         text-align: center;
 
         .img-spoon {
             @media only screen and (max-width: 410px) {
-
-                grid-template-columns: repeat(1, 1fr);
+                display: none;
             }
 
             @media only screen and (min-width: 411px) and (max-width: 767px) {
-
-                grid-template-columns: repeat(2, 1fr);
-                padding: 60px;
+                display: none;
             }
 
             @media only screen and (min-width: 768px) {
 
-                grid-template-columns: repeat(5, 1fr);
-                padding: 60px;
+                width: 100px;
+                position: absolute;
+                transform: translateY(-40px);
             }
+        }
+
+        hr {
+            border-color: #222627;
+        }
+    }
+
+    &__down {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 20px;
+        color: #979999;
+
+        .copyright {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            text-align: left;
+            padding-top: 10px;
 
             p {
-                color: $footer-font-color;
-            font-size: 15px;
-
-                a {
-                    text-decoration: none;
-                    font-size: 15px;
-                color: $footer-font-color;
-                }
-
+                margin: 0;
             }
 
-            .newsletters {
+            span {
+                color: #c8a96a;
+            }
 
-                @media only screen and (min-width: 768px) {
-                    grid-column: 3 / 5;
-                    padding-right: 50px;
-                }
+        }
 
-                input {
-                    width: 300px;
+        .reseau {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            text-align: right;
+
+            a {
+                i {
+                    width: 50px;
                     height: 50px;
+                    color: #222627;
 
-                    &::placeholder {
-                        font-size: 20px;
-                        padding-left: 30px;
-                    }
-                }
-
-                button {
-                    width: 57px;
-                    height: 57px;
-                    margin-left: -7px;
-                    background-color: #c8a96a;
-
-                    i {
-                        color: white;
-                        font-size: 14px;
-                    }
-                }
-            }
-
-            .contact {
-                p {
-                    i {
-                        padding-right: 10px;
+                    &:hover {
                         color: #c8a96a;
                     }
-
-
                 }
+
             }
         }
-
-        &__line {
-            text-align: center;
-
-            .img-spoon {
-                @media only screen and (max-width: 410px) {
-                    display: none;
-                }
-
-                @media only screen and (min-width: 411px) and (max-width: 767px) {
-                    display: none;
-                }
-
-                @media only screen and (min-width: 768px) {
-
-                    width: 100px;
-                    position: absolute;
-                    transform: translateY(-40px);
-                }
-            }
-
-            hr {
-                border-color: #222627;
-            }
-        }
-
-        &__down {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            font-size: 20px;
-            color: #979999;
-
-            .copyright {
-                grid-column: 1 / 3;
-                grid-row: 1 / 2;
-                text-align: left;
-                padding-top: 10px;
-
-                p {
-                    margin: 0;
-                }
-
-                span {
-                    color: #c8a96a;
-                }
-
-            }
-
-            .reseau {
-                grid-column: 2 / 3;
-                grid-row: 1 / 2;
-                text-align: right;
-
-                a {
-                    i {
-                        width: 50px;
-                        height: 50px;
-                        color: #222627;
-
-                        &:hover {
-                            color: #c8a96a;
-                        }
-                    }
-
-                }
-            }
-
-        }
-
 
     }
+
+
 }

@@ -1,37 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
 .images__brand {
   display: flex;
   justify-content: space-between;
   padding: 100px;
-  /* display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  padding: 100px 200px; */
 }
 .images__brand figure img {
   filter: grayscale(100%);
   height: 100px;
 }
 
-@font-face {
-  font-family: "fa-light";
-  font-weight: 300;
-  src: url("../assets/font/fa-light-300.woff2") format("woff2");
-}
-@font-face {
-  font-family: "fa-brands";
-  font-weight: 400;
-  src: url("../assets/font/fa-brands-400.woff2") format("woff2");
-}
-@font-face {
-  font-family: "fa-regular";
-  font-weight: 400;
-  src: url("../assets/font/fa-regular-400.woff2") format("woff2");
-}
-@font-face {
-  font-family: "fa-solid";
-  font-weight: 900;
-  src: url("../assets/font/fa-solid-900.woff2") format("woff2");
-}
 footer {
   background-image: url("../assets/img/footer/img-ng-footer.jpg");
   color: white;
@@ -51,17 +27,6 @@ footer .footer__logo {
 }
 footer .footer__container-links {
   display: grid;
-}
-@media only screen and (max-width: 410px) {
-  footer .footer__container-links {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media only screen and (min-width: 411px) and (max-width: 767px) {
-  footer .footer__container-links {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 60px;
-  }
 }
 @media only screen and (min-width: 768px) {
   footer .footer__container-links {
@@ -88,76 +53,134 @@ footer .footer__container-links .newsletters input {
   width: 300px;
   height: 50px;
 }
-footer .footer__container-links .newsletters input::placeholder {
+footer .footer__container-links::placeholder {
   font-size: 20px;
   padding-left: 30px;
 }
-footer .footer__container-links .newsletters button {
+footer .footer button {
   width: 57px;
   height: 57px;
   margin-left: -7px;
   background-color: #c8a96a;
 }
-footer .footer__container-links .newsletters button i {
+footer .footer button i {
   color: white;
   font-size: 14px;
 }
-footer .footer__container-links .contact p i {
+footer .contact p i {
   padding-right: 10px;
   color: #c8a96a;
 }
-footer .footer__line {
+
+.footer__line {
   text-align: center;
 }
 @media only screen and (max-width: 410px) {
-  footer .footer__line .img-spoon {
+  .footer__line .img-spoon {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 411px) and (max-width: 767px) {
+  .footer__line .img-spoon {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__line .img-spoon {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 60px;
+  }
+}
+.footer__line .img-spoon p {
+  color: #979999;
+  font-size: 15px;
+}
+.footer__line .img-spoon p a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #979999;
+}
+@media only screen and (min-width: 768px) {
+  .footer__line .img-spoon .newsletters {
+    grid-column: 3/5;
+    padding-right: 50px;
+  }
+}
+.footer__line .img-spoon .newsletters input {
+  width: 300px;
+  height: 50px;
+}
+.footer__line .img-spoon .newsletters input::placeholder {
+  font-size: 20px;
+  padding-left: 30px;
+}
+.footer__line .img-spoon .newsletters button {
+  width: 57px;
+  height: 57px;
+  margin-left: -7px;
+  background-color: #c8a96a;
+}
+.footer__line .img-spoon .newsletters button i {
+  color: white;
+  font-size: 14px;
+}
+.footer__line .img-spoon .contact p i {
+  padding-right: 10px;
+  color: #c8a96a;
+}
+.footer__line__line {
+  text-align: center;
+}
+@media only screen and (max-width: 410px) {
+  .footer__line__line .img-spoon {
     display: none;
   }
 }
 @media only screen and (min-width: 411px) and (max-width: 767px) {
-  footer .footer__line .img-spoon {
+  .footer__line__line .img-spoon {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  footer .footer__line .img-spoon {
+  .footer__line__line .img-spoon {
     width: 100px;
     position: absolute;
     transform: translateY(-40px);
   }
 }
-footer .footer__line hr {
+.footer__line__line hr {
   border-color: #222627;
 }
-footer .footer__down {
+.footer__line__down {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   font-size: 20px;
   color: #979999;
 }
-footer .footer__down .copyright {
+.footer__line__down .copyright {
   grid-column: 1/3;
   grid-row: 1/2;
   text-align: left;
   padding-top: 10px;
 }
-footer .footer__down .copyright p {
+.footer__line__down .copyright p {
   margin: 0;
 }
-footer .footer__down .copyright span {
+.footer__line__down .copyright span {
   color: #c8a96a;
 }
-footer .footer__down .reseau {
+.footer__line__down .reseau {
   grid-column: 2/3;
   grid-row: 1/2;
   text-align: right;
 }
-footer .footer__down .reseau a i {
+.footer__line__down .reseau a i {
   width: 50px;
   height: 50px;
   color: #222627;
 }
-footer .footer__down .reseau a i:hover {
+.footer__line__down .reseau a i:hover {
   color: #c8a96a;
 }
 
@@ -171,7 +194,7 @@ footer .footer__down .reseau a i:hover {
 }
 .news_title h2 {
   font-family: "Forum", cursive;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 300;
   text-align: center;
 }
@@ -189,7 +212,7 @@ footer .footer__down .reseau a i:hover {
 }
 .news_article article {
   width: 410px;
-  height: 280px;
+  background-color: antiquewhite;
 }
 .news_article article figcaption {
   width: 370px;
@@ -265,7 +288,7 @@ header {
   font-size: 15px;
 }
 .navbar ul li a:hover {
-  color: rgb(193, 159, 96);
+  color: #c8a96a;
 }
 .navbar .contact {
   display: flex;
@@ -294,7 +317,7 @@ header {
 }
 
 .reserve .contact-btn {
-  background-color: #c19f60;
+  background-color: #c8a96a;
   color: white;
   width: max-content;
   padding: 10px;
@@ -335,7 +358,7 @@ header {
   width: 50%;
 }
 .header button:hover {
-  background-color: rgb(193, 159, 96);
+  background-color: #c8a96a;
 }
 
 @media screen and (max-width: 900px) {
@@ -448,7 +471,7 @@ header {
   background-image: url("../assets/img/our-chefs/imgbg-ourchefs.jpg");
   padding: 10px;
 }
-.chefs .chefs__photo {
+.chefs__photo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15%;
@@ -456,14 +479,13 @@ header {
   padding-bottom: 200px;
   width: 235px;
 }
-.chefs .chefs__photo figure {
+.chefs__photo figure {
   width: 235px;
 }
-.chefs .chefs__photo figure img {
+.chefs__photo figure img {
   width: 235px;
   height: 310px;
 }
-
 .chefs__title {
   color: white;
   padding-top: 100px;
@@ -473,9 +495,19 @@ header {
   font-size: 50px;
   font-weight: 300;
   text-align: center;
+}
+.chefs__title__title {
+  color: white;
+  padding-top: 100px;
+}
+.chefs__title__title h2 {
+  font-family: "Forum", cursive;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
   margin-bottom: -15px;
 }
-.chefs__title h3 {
+.chefs__title__title h3 {
   text-align: center;
   font-weight: 300;
   line-height: 3;
@@ -497,8 +529,8 @@ header {
 .gallery .gallery__container-grid {
   padding: 100px;
   display: grid;
-  grid-template-columns: 4, 1fr;
-  grid-template-rows: 2, 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .gallery .gallery__container-grid .card-large1 {
   grid-column: 1/3;

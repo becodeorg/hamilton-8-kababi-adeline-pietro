@@ -1,3 +1,5 @@
+@use '../base/fonts';
+
 .price {
     background-color: aqua;
     .price__container-grid {
@@ -7,12 +9,12 @@
         .meal {
             .meal__info {
                 h3 {
-                    font-family: 'Forum', cursive;
+                    font-family: fonts.$font-forum-cursive;
                     ;
                 }
 
                 h4 {
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: fonts.$font-open-sans;
                 }
             }
         }
@@ -21,7 +23,7 @@
 
 .price__title {
     h2 {
-        font-family: 'Forum', cursive;
+        font-family: fonts.$font-forum-cursive;
         font-size: 40px;
         font-weight: 300;
         text-align: center;
