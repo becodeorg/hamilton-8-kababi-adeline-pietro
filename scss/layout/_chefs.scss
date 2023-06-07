@@ -1,0 +1,45 @@
+@use '../base/fonts';
+
+.chefs {
+
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../assets/img/our-chefs/imgbg-ourchefs.jpg');
+    padding: 10px;
+
+    .chefs__photo {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15%;
+        padding-left: 12%;
+        padding-bottom: 200px;
+        width: 235px;
+        figure{
+            width: 235px;
+            img{
+                width: 235px;
+                height: 310px;
+            }
+        }
+    }
+}
+
+.chefs__title {
+    color: white;
+    padding-top: 100px;
+
+    h2 {
+        font-family: 'Forum', cursive;
+        font-size: 50px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: -15px;
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: 300;
+        line-height: 3;
+        padding-bottom: 50px;
+    }
+}
