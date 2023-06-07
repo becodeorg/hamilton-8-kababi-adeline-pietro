@@ -9,6 +9,13 @@ footer {
     font-size: 22px;
     line-height: 30px;
     padding: 82px 10px;
+    .container-links{
+        display: flex;
+        flex-direction: row;
+        .links-facilities{
+            width: min-content;
+        }
+    }
 
     h3 {
         font-family: fonts.$font-forum-cursive;
