@@ -83,10 +83,6 @@ footer .footer__container-links .newsletters input {
   width: 400px;
   height: 50px;
 }
-footer .footer__container-links .newsletters input::-moz-placeholder {
-  font-size: 20px;
-  padding-left: 30px;
-}
 footer .footer__container-links .newsletters input::placeholder {
   font-size: 20px;
   padding-left: 30px;

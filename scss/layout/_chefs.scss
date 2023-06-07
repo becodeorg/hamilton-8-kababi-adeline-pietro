@@ -4,12 +4,33 @@
 
     font-family: fonts.$font-open-sans;
     background-image: url('../assets/img/our-chefs/imgbg-ourchefs.jpg');
+    padding: 10px;
 
     &__photo {
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding: 0 400px 200px 400px;
+        gap: 15%;
+        padding-left: 12%;
+        padding-bottom: 200px;
+        width: 235px;
+        figure{
+            width: 235px;
+            img{
+                width: 235px;
+                height: 310px;
+            }
+        }
+    }
+
+    &__title {
+        color: white;
+        padding-top: 100px;
+
+    h2 {
+        font-family: 'Forum', cursive;
+        font-size: 50px;
+        font-weight: 300;
         text-align: center;
 
     }
