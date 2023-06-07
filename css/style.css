@@ -526,18 +526,54 @@ header {
 }
 
 .price {
-  background-color: aqua;
+  background-color: antiquewhite;
 }
 .price .price__container-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 4, 1fr;
+  padding: 5% 30% 5% 22%;
+  column-gap: 5%;
+  row-gap: 5%;
+}
+.price .price__container-grid .meal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 380px;
+  height: 70px;
+  background-color: white;
+  border-radius: 5px;
+}
+.price .price__container-grid .meal:hover {
+  border: dotted #c8a96a 3px;
+}
+.price .price__container-grid .meal .meal__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
 }
 .price .price__container-grid .meal .meal__info h3 {
+  color: black;
+  font-size: 15px;
   font-family: "Forum", cursive;
 }
 .price .price__container-grid .meal .meal__info h4 {
+  font-size: 12px;
+  color: gray;
   font-family: "Open Sans", sans-serif;
+}
+.price .price__container-grid .meal .meal__price {
+  display: flex;
+  justify-content: center;
+  padding-right: 5%;
+  align-items: center;
+  text-align: center;
+}
+.price .price__container-grid .meal .meal__price span {
+  font-size: 30px;
+  color: #c8a96a;
 }
 
 .price__title h2 {
