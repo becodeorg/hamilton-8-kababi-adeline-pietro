@@ -173,7 +173,7 @@ header{
     }
     
 }
-@media screen and (max-width: 580px){
+@media screen and (min-width: 375px){
     header{
         width: 100%;
         background-position: top;
@@ -213,7 +213,7 @@ header{
                 display: flex;
                 width: auto;
                 margin-top: 200px;
-                font-size: 50px;
+                font-size: 30px;
                 margin-left: 0px;
             }
         }
